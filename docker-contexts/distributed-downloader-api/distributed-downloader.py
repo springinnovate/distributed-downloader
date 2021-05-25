@@ -32,10 +32,6 @@ def status():
     """Return status."""
     return jsonify(STATUS)
 
-@app.get('/hi/<int>')
-def hi_func(int x):
-    return 'hi there!' + str(x)
-
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0')
